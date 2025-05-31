@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  doc_no: MyString
+  doc_date: 2024-12-13 10:36:57
+  total_price: 1.5
+  total_amount: 1
+  discount: 1.5
+  get_paid: 1.5
+  change: 1.5
+  member: one
+  reservation: one
+  status_master: one
+  customer_name: MyString
+  table: one
+
+two:
+  doc_no: MyString
+  doc_date: 2024-12-13 10:36:57
+  total_price: 1.5
+  total_amount: 1
+  discount: 1.5
+  get_paid: 1.5
+  change: 1.5
+  member: two
+  reservation: two
+  status_master: two
+  customer_name: MyString
+  table: two

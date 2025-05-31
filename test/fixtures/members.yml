@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cid: 1
+  name: MyString
+  expired: 2024-12-13 10:36:41
+  status_master: one
+
+two:
+  cid: 1
+  name: MyString
+  expired: 2024-12-13 10:36:41
+  status_master: two

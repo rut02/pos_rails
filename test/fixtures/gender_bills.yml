@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  bill: one
+  gender: one
+  amount: 1
+
+two:
+  bill: two
+  gender: two
+  amount: 1

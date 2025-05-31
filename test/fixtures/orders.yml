@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  bill: one
+  doc_no: MyString
+  doc_date: 2024-12-13 10:37:09
+  total_price: 1.5
+  total_amount: 1
+  staff: one
+  status_master: one
+
+two:
+  bill: two
+  doc_no: MyString
+  doc_date: 2024-12-13 10:37:09
+  total_price: 1.5
+  total_amount: 1
+  staff: two
+  status_master: two
