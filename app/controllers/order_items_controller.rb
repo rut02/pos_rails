@@ -19,10 +19,19 @@ class OrderItemsController < ApplicationController
     render json: @order_items
   end
   # GET /order_items/bill/:bill_id
-  def get_order_items_by_bill
-    @order_items = OrderItem.joins(:order).where(orders: { bill_id: params[:id] })
-    render json: @order_items
-  end
+def get_order_items_by_bill
+  @order_items = OrderItem.includes(:product, order: :status_master)
+                         .joins(:order)
+                         .where(orders: { 
+                           bill_id: params[:id],
+                           status_master_id: StatusMaster.where(name: 'Served').select(:id)
+                         })
+
+  render json: @order_items.as_json(include: {
+    product: { only: [:id, :name, :unit_price] },
+    order: { only: [:id, :doc_no] }
+  })
+end
 
   # POST /order_items
   def create

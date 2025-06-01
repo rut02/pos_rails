@@ -18,7 +18,7 @@ class Order < ApplicationRecord
           include: {
             product: { only: [:id, :name, :price] } 
           },
-          only: [:id, :amount, :created_at] 
+          only: [:id, :amount,:unit_price, :price, :created_at] 
         },
         bill: { 
           include: {

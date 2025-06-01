@@ -15,6 +15,12 @@ Product.find_or_create_by!(name: "Burger", product_category_id: 1, description: 
 Product.find_or_create_by!(name: "Fries", product_category_id: 1, description: "Tasty", unit_price: 5)
 Product.find_or_create_by!(name: "Coke", product_category_id: 2, description: "Tasty", unit_price: 5)
 Product.find_or_create_by!(name: "Ice Cream", product_category_id: 3, description: "Tasty", unit_price: 5)
+Product.find_or_create_by!(name: "Pizza", product_category_id: 1, description: "Tasty", unit_price: 15)
+Product.find_or_create_by!(name: "Pasta", product_category_id: 1, description: "Tasty", unit_price: 12)
+Product.find_or_create_by!(name: "Salad", product_category_id: 1, description: "Tasty", unit_price: 8)
+Product.find_or_create_by!(name: "Tea", product_category_id: 2, description: "Tasty", unit_price: 3)
+Product.find_or_create_by!(name: "Coffee", product_category_id: 2, description: "Tasty", unit_price: 4)
+Product.find_or_create_by!(name: "Sandwich", product_category_id: 1, description: "Tasty", unit_price: 6)
 
 StatusMaster.find_or_create_by!(name: "Pending")#1
 StatusMaster.find_or_create_by!(name: "Completed")#2

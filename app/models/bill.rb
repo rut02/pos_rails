@@ -28,7 +28,8 @@ class Bill < ApplicationRecord
             gender: { only: [:id, :gender] }
           },
           only: [:amount]
-        }
+        },
+        status_master: { only: [:id, :name] },
       },
        methods: [:table_name]
     ))
